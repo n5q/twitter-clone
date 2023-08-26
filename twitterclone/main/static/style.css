@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'OPSans-Light'; 
+  src: url('ttf/OPSans-Light.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'OPSans-Thin'; 
+  src: url('ttf/OPSans-Thin.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'OPSans-Regular'; 
+  src: url('ttf/OPSans-Regular.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'OPSans-Medium'; 
+  src: url('ttf/OPSans-Medium.ttf') format('truetype'); 
+}
+
+body {
+  background-color: #DEE9ED;
+  font-family: 'OPSans-Thin', Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: 'OPSans-Regular', Arial, Helvetica, sans-serif;
+}
+
+.post {
+    background-color: #FFFFFF;
+    border: 1px solid #000000; 
+    border-radius: 10px;
+    width: 75%; 
+    padding-left: 10px;
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    word-wrap: normal;
+  }
+  
+.header {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.post:hover {
+  background-color: #E8F0F2;
+}
+
+.post-button {
+  padding: 10px 20px; 
+  background-color: #6c93bd; 
+  color: #FFFFFF; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  width: 5%;
+  text-decoration: none;
+  font-family: 'OPSans-Light', Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+
+.post-button:hover {
+  background-color: #5c7ea0;
+}

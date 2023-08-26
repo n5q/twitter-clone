@@ -1,1 +1,28 @@
-<h1>e</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Tweeter</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Tweeter</h1>
+            <a class="post-button" href="https://google.com">Post</a>
+    </div>
+    
+    <div class="post_area">
+        {% for post in posts %}
+        <div class="post">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
