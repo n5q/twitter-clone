@@ -165,3 +165,4 @@ include/
 pyvenv.cfg
 lib64/
 lib/
+*__pycache__/
