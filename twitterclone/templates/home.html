@@ -12,7 +12,26 @@
 
     <div class="header">
         <h1>Tweeter</h1>
-            <a class="post-button" href="https://google.com">Post</a>
+            
+            <div id="formContainer" style="display: none;">
+                <form method="post" action="">
+                    <!-- Your form fields go here -->
+                    {% for field in postform %}
+                    <div class="form-group">
+                            {% csrf_token %}
+                            {{ field }}
+                        </div>
+                    {% endfor %}
+                    <br><button class="post-button submit" type="submit">Post</button>
+                </form>
+            </div>
+            <button id="postbutton" class="post-button" type="submit" href="https://google.com">Post</button>
+            <script>
+                document.getElementById('postbutton').addEventListener('click', function() {
+                    document.getElementById('formContainer').style.display = 'block';
+                    document.getElementById('postbutton').style.display = 'none';
+                });
+            </script>
     </div>
     
     <div class="post_area">
@@ -22,6 +41,7 @@
             <p>{{ post.content }}</p>
         </div>
         {% endfor %}
+
     </div>
 
 </body>

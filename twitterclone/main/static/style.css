@@ -49,10 +49,9 @@ p {
   padding: 10px 20px; 
   background-color: #6c93bd; 
   color: #FFFFFF; 
-  border: none; 
+  border: #6c93bd; 
   border-radius: 5px; 
   cursor: pointer; 
-  width: 5%;
   text-decoration: none;
   font-family: 'OPSans-Light', Arial, Helvetica, sans-serif;
   font-size: larger;
@@ -60,4 +59,16 @@ p {
 
 .post-button:hover {
   background-color: #5c7ea0;
+}
+
+.postinput {
+  background-color: #FFFFFF;
+  border: 1px solid #000000; 
+  border-radius: 3px;
+  width: auto; 
+  padding-bottom: 10px;
+  text-align: justify;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  word-wrap: normal;
 }
