@@ -4,7 +4,7 @@ from . import models
 from . import forms
 
 # Create your views here.
-def home(request) -> HttpResponseRedirect | HttpResponse:
+def home(request) -> HttpResponse:
     posts = models.Post.objects.all().order_by("-date")
     if request.method == "POST":
         form = forms.PostForm(request.POST)
