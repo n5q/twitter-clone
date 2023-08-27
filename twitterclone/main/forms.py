@@ -4,16 +4,16 @@ from . import models
 class PostForm(forms.ModelForm):
     class Meta:
         model = models.Post
-        fields = ["title", "content"]
+        fields = ["author", "content"]
         widgets = {
-            "title": forms.TextInput(attrs={
+            "author": forms.TextInput(attrs={
                 "class": "postform-title",
-                "placeholder": "Title"
+                "placeholder": " Username"
             }),
             "content": forms.Textarea(attrs={
                 "class": "postform-content",
-                "placeholder": "Content"
+                "placeholder": " Content"
             })
-            
+
 
         }

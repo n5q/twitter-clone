@@ -37,8 +37,9 @@
     <div class="post_area">
         {% for post in posts %}
         <div class="post">
-            <h2>{{ post.title }}</h2>
+            <h2>Post by {{ post.author }}</h2>
             <p>{{ post.content }}</p>
+            <p style="color: #AAAAAA;">{{ post.date }}</p>
         </div>
         {% endfor %}
 

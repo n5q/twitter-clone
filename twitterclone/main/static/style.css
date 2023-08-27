@@ -61,14 +61,15 @@ p {
   background-color: #5c7ea0;
 }
 
-.postinput {
-  background-color: #FFFFFF;
-  border: 1px solid #000000; 
-  border-radius: 3px;
-  width: auto; 
-  padding-bottom: 10px;
-  text-align: justify;
-  margin: 0 auto;
+.postform-title {
+  font-family: 'OPSans-Light', Arial, Helvetica, sans-serif;
+  font-size: 20px;
   margin-bottom: 10px;
-  word-wrap: normal;
+  border-radius: 10px;
+}
+.postform-content {
+  font-family: 'OPSans-Light', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }

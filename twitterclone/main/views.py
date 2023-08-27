@@ -10,7 +10,7 @@ def home(request) -> HttpResponse:
         form = forms.PostForm(request.POST)
         if form.is_valid():
             post = models.Post()
-            post.title = form.cleaned_data["title"]
+            post.author = form.cleaned_data["author"]
             post.content = form.cleaned_data["content"]
             post.save()
             return HttpResponseRedirect("/")
