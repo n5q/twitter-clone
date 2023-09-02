@@ -8,6 +8,7 @@ class Post(models.Model):
     reactions = models.IntegerField(default=0)
     dislikes = models.IntegerField(default=0)
     sentiment = models.FloatField(default=0.0)
+    reaction_emoji = models.CharField(max_length=1, default="👍")
 
     def __str__(self) -> str:
         return f"Post by self.author at self.date"

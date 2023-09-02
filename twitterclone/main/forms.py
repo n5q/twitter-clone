@@ -17,3 +17,9 @@ class PostForm(forms.ModelForm):
 
 
         }
+
+class ReactForm(forms.ModelForm):
+    class Meta:
+        model = models.Post
+        fields = ["id"]
+        widgets = {"id": forms.HiddenInput()}

@@ -39,7 +39,13 @@
         <div class="post">
             <h2>Post by {{ post.author }}</h2>
             <p>{{ post.content }}</p>
+            <form method="post" action="{% url 'react' post.id %}">
+                {% csrf_token %}
+                {{ ReactForm.as_p }}
+                <button class="post-button submit" type="submit">{{post.reaction_emoji}}  {{post.reactions}}</button>
+              </form>
             <p style="color: #AAAAAA;">{{ post.date }}</p>
+
         </div>
         {% endfor %}
 
